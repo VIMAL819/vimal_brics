@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="vimalram" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find BRICKS_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find BRICKS_description)/urdf/BRICKS.trans" />
-<xacro:include filename="$(find BRICKS_description)/urdf/BRICKS.gazebo" />
+<xacro:include filename="$(find vimalram_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find vimalram_description)/urdf/vimalram.trans" />
+<xacro:include filename="$(find vimalram_description)/urdf/vimalram.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="-0.006683271838673498 0.0023682708650185117 0.0603107509568688" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BRICKS_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://vimalram_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BRICKS_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://vimalram_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="0.070143 -0.057368 -0.050083" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BRICKS_description/meshes/whell_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://vimalram_description/meshes/whell_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.070143 -0.057368 -0.050083" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BRICKS_description/meshes/whell_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://vimalram_description/meshes/whell_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="0.070143 0.052632 -0.050083" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BRICKS_description/meshes/whell_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://vimalram_description/meshes/whell_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.070143 0.052632 -0.050083" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BRICKS_description/meshes/whell_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://vimalram_description/meshes/whell_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.093072 -0.002368 -0.074905" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BRICKS_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://vimalram_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.093072 -0.002368 -0.074905" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BRICKS_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://vimalram_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
